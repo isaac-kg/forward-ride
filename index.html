@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/fav.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forward Ride Media Web Design Agency</title>
+  </head>
+  <body>
+    <!-- <header class="header">
+      <div class="header__left">
+        <div class="mobile-menu">
+          <div class="logo">Isaac</div>
+          <div class="menu-btn" onclick="toggleMenu()">
+            <img id="image" src="./assets/menu.svg" alt="" srcset="" />
+          </div>
+        </div>
+        <div class="nav nav-responsive">
+          <span class="nav__link"><a href="#about">About</a></span>
+          <span class="nav__link"><a href="#projects">Our Work</a></span>
+          <span class="nav__link"><a href="#contact">Get In Touch</a></span>
+        </div>
+      </div>
+    </header> -->
+
+    <header>
+      <div class="header">
+        <img class="header__image" src="./images/logo.svg" alt="" />
+        <nav class="navigation" id="nav">
+          <a href="#about">About</a>
+          <a href="#project">Our Work</a>
+          <a href="#contact">Get In Touch</a>
+        </nav>
+      </div>
+      <div class="nav__bar">
+        <div onclick="myFuntion()">
+          <img id="image" src="./images/hamburger.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero__container">
+        <p class="hero__section">
+          Accelerating your business's success with websites that excite and
+          inspire potential customers.
+        </p>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about__container">
+        <p class="about__title">Forward Ride Agency</p>
+        <div class="about__section">
+          <p style="font-size: 22px; margin-bottom: 20px">
+            We love making websites 😊
+          </p>
+          <p>
+            We are a web design agency focused on creating websites that leave a
+            lasting impression and make potential customers fall in love with
+            your business.
+          </p>
+          <p style="margin-top: 10px">
+            In today's world having a great website is really important because
+            it helps people trust your business more. When your website looks
+            professional and works smoothly, it gives customers confidence that
+            you're dependable and trustworthy.
+          </p>
+          <p style="margin-top: 10px">
+            We understand the importance of websites, and we are dedicated to creating greate
+            websites for businesses and entrepreneurs.
+          </p>
+        </div>
+        <div>
+          <a href="" class="button about__button">WhatApp US</a>
+        </div>
+      </div>
+      <div class="about__image">
+        <img
+          style="width: 100%; max-height: 450px"
+          src="./images/website-creator-animate.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="project">
+      <p class="project__title">Projects Showcase</p>
+      <div class="project__section">
+        <div class="project__item">
+          <img class="project__image" src="./images/beauty.PNG" alt="" />
+        </div>
+        <div class="project__item project__item-image">
+          <img class="project__image" src="./images/plumbing.PNG" alt="" />
+        </div>
+        <div class="project__item">
+          <img class="project__image" src="./images/spa.PNG" alt="" />
+        </div>
+        <div class="project__item">
+          <img class="project__image" src="./images/pool.PNG" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <section id="contact" class="contact">
+      <div class="contact__container">
+        <div class="form">
+          <h1 class="form__header">Feel free to message me!</h1>
+          <p class="form__info">
+            Have a question, want to hire me or just want to chat?
+          </p>
+          <form name="contact" netlify>
+            <div class="form__group">
+              <div class="col">
+                <label>Your Name</label>
+                <input type="text" name="name" id="" required />
+              </div>
+              <div class="col form__group-email">
+                <label>Your Email Address</label>
+                <input type="text" name="email" id="" required />
+              </div>
+            </div>
+            <div class="form__textarea">
+              <label>Your Message</label><br />
+              <textarea name="message" class="contact__textarea"></textarea>
+            </div>
+            <div class="form__group">
+              <button type="submit" class="btn btn__send">Send</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-card">
+          <h3>We will get back to you within 2 days.</h3>
+          <p>Want to know the importance of a website?</p>
+          <p>Want use to design a website for your business?</p>
+          <p>You just want a quotation?</p>
+          <p>fee free to send us a message </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <hr class="footer__line" />
+      <p>&copy; 2024 Forward Ride Agency</p>
+    </div>
+    <script>
+      const myFuntion = () => {
+        let nav = document.getElementById("nav");
+        let img = document.getElementById("image");
+
+        if (nav.style.display === "flex") {
+          img.src = "./images/hamburger.svg";
+          nav.style.display = "none";
+        } else {
+          img.src = "./images/close.svg";
+          nav.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
+</html>
